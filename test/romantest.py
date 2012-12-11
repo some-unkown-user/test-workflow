@@ -17,6 +17,9 @@ import sys
 import os
 import unittest
 
+# Directory structure for project:
+# ─test-workflow─┬─src───roman.py
+#                └─test───romantest.py
 sys.path.append(os.path.join(os.path.dirname(__file__), '../src'))
 import roman
 
