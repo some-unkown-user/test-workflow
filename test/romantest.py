@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# coding: utf-8
 
 """Unit test for roman.py
 
@@ -17,7 +18,10 @@ import sys
 import os
 import unittest
 
-sys.path.append(os.path.join(os.getcwd(), '../src'))
+# Directory structure for project:
+# ─test-workflow─┬─src───roman.py
+#                └─test───romantest.py
+sys.path.append(os.path.join(os.path.dirname(__file__), '../src'))
 import roman
 
 class KnownValues(unittest.TestCase):
