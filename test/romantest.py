@@ -17,7 +17,7 @@ import sys
 import os
 import unittest
 
-sys.path.append(os.path.join(os.getcwd(), '../src'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '../src'))
 import roman
 
 class KnownValues(unittest.TestCase):
